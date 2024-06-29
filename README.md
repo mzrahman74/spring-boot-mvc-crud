@@ -26,7 +26,7 @@ Before you begin, ensure you have the following installed on your local machine:
 1. **Clone the repository**
     ```sh
     git clone https://github.com/yourusername/spring-boot-mvc-crud.git
-    cd spring-boot-mysql-app
+    cd spring-boot-spring-boot-mvc-crud
     ```
 
 2. **Set up the MySQL database**
