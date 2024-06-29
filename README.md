@@ -53,11 +53,11 @@ CREATE TABLE `family` (
 --
 
 INSERT INTO `family` VALUES 
-	(1,'Mohammad','Rahman', 50),
-	(2,'Nusrat','Rahman', 41),
-	(3,'Naushin','Rahman', 14),
-	(4,'Nuhaa','Rahman', 10),
-	(5,'Yusuf','Rahman', 3);
+	(1,'John','Smith', 55),
+	(2,'Boby','Owen', 42),
+	(3,'Tom','Rah', 14),
+	(4,'Ken','Smith', 10),
+	(5,'Rony','Cane', 3);
     ```
 
 3. **Configure database connection properties**
