@@ -1,6 +1,3 @@
-Here's a sample `README.md` for a Spring Boot Java application with a MySQL database:
-
-```markdown
 # Spring Boot MySQL Application
 
 This is a simple Spring Boot application that uses a MySQL database. It demonstrates basic CRUD operations with Spring Data JPA.
@@ -33,9 +30,34 @@ Before you begin, ensure you have the following installed on your local machine:
     ```
 
 2. **Set up the MySQL database**
-    - Create a new database named `spring_boot_db`
-    ```sql
-    CREATE DATABASE spring_boot_db;
+```sh
+CREATE DATABASE  IF NOT EXISTS `family_directory`;
+USE `family_directory`;
+
+--
+-- Table structure for table `family`
+--
+
+DROP TABLE IF EXISTS `family`;
+
+CREATE TABLE `family` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(45) DEFAULT NULL,
+  `last_name` varchar(45) DEFAULT NULL,
+  `age` INTEGER DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+
+--
+-- Data for table `family`
+--
+
+INSERT INTO `family` VALUES 
+	(1,'Mohammad','Rahman', 50),
+	(2,'Nusrat','Rahman', 41),
+	(3,'Naushin','Rahman', 14),
+	(4,'Nuhaa','Rahman', 10),
+	(5,'Yusuf','Rahman', 3);
     ```
 
 3. **Configure database connection properties**
@@ -43,7 +65,7 @@ Before you begin, ensure you have the following installed on your local machine:
     Update the `src/main/resources/application.properties` file with your database connection details:
 
     ```properties
-    spring.datasource.url=jdbc:mysql://localhost:3306/spring_boot_db
+    spring.datasource.url=jdbc:mysql://localhost:3306/family_directory
     spring.datasource.username=your_mysql_username
     spring.datasource.password=your_mysql_password
     spring.jpa.hibernate.ddl-auto=update
