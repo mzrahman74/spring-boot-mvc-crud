@@ -1,6 +1,6 @@
-package com.mohammad.springboot.thymeleafdemo.dao;
+package com.mohammad.springboot.dao;
 
-import com.mohammad.springboot.thymeleafdemo.entity.Family;
+import com.mohammad.springboot.entity.Family;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 
