@@ -1,6 +1,6 @@
-package com.mohammad.springboot.thymeleafdemo.service;
+package com.mohammad.springboot.service;
 
-import com.mohammad.springboot.thymeleafdemo.entity.Family;
+import com.mohammad.springboot.entity.Family;
 
 import java.util.List;
 

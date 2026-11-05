@@ -1,7 +1,7 @@
-package com.mohammad.springboot.thymeleafdemo.service;
+package com.mohammad.springboot.service;
 
-import com.mohammad.springboot.thymeleafdemo.dao.FamilyRepository;
-import com.mohammad.springboot.thymeleafdemo.entity.Family;
+import com.mohammad.springboot.dao.FamilyRepository;
+import com.mohammad.springboot.entity.Family;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
@@ -19,7 +19,7 @@ public class FamilyServiceImpl implements FamilyService {
     }
     @Override
     public List<Family> findAll() {
-        return familyRepository.findAll(Sort.by(Sort.Order.asc("firstName")));
+        return familyRepository.findAll(Sort.by(Sort.Order.asc("lastName")));
     }
 
     @Override
@@ -42,6 +42,5 @@ public class FamilyServiceImpl implements FamilyService {
     @Override
     public void deletedById(int theId) {
         familyRepository.deleteById(theId);
-
     }
 }

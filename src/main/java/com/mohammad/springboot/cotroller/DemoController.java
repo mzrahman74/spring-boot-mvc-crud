@@ -1,4 +1,4 @@
-package com.mohammad.springboot.thymeleafdemo.cotroller;
+package com.mohammad.springboot.cotroller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,8 +1,8 @@
-package com.mohammad.springboot.thymeleafdemo.cotroller;
+package com.mohammad.springboot.cotroller;
 
 
-import com.mohammad.springboot.thymeleafdemo.entity.Family;
-import com.mohammad.springboot.thymeleafdemo.service.FamilyService;
+import com.mohammad.springboot.entity.Family;
+import com.mohammad.springboot.service.FamilyService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
